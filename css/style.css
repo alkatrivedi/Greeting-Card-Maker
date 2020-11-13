@@ -27,16 +27,6 @@ body{
 
 /* *************************************Searchbar Animation***************************** */
 
-input{
-  border-style: none;
-}
-
-input:focus, textarea:focus, select:focus{
-  outline: none;
-}
-
-/* *************************************Searchbar Animation***************************** */
-
 
 .nav-item{
 	margin-right: 5px;
@@ -151,7 +141,6 @@ input:focus, textarea:focus, select:focus{
     color: white;
     text-decoration: none;
   }
-
 #nextbtn{
   margin-top: 10px;
   background: #F1948A;
@@ -162,3 +151,4 @@ input:focus, textarea:focus, select:focus{
   background: black;
   transform: scale(1.1);
 }
+
