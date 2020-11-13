@@ -141,5 +141,14 @@ body{
     color: white;
     text-decoration: none;
   }
+#nextbtn{
+  margin-top: 10px;
+  background: #F1948A;
+  padding: 5px;
+  border-radius: .70rem;
+}
+#nextbtn:hover{
+  background: black;
+  transform: scale(1.1);
+}
 
-  
