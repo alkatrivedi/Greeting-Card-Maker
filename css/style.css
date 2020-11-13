@@ -27,16 +27,6 @@ body{
 
 /* *************************************Searchbar Animation***************************** */
 
-input{
-  border-style: none;
-}
-
-input:focus, textarea:focus, select:focus{
-  outline: none;
-}
-
-/* *************************************Searchbar Animation***************************** */
-
 
 .nav-item{
 	margin-right: 5px;
