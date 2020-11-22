@@ -1,8 +1,12 @@
 body{
 	font-family: 'Lemonada', cursive;
   background: #FFAFBD;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);   Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to right, #ffc3a0, #FFAFBD);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgb(111,113,232);
+  background: linear-gradient(90deg, rgba(111,113,232,1) 0%, rgba(189,84,233,1) 28%, rgba(196,117,218,1) 68%, rgba(237,244,245,1) 100%);
+  /*background: rgb(195,196,230);
+  background: linear-gradient(90deg, rgba(195,196,230,1) 0%, rgba(158,84,233,1) 29%, rgba(198,117,218,1) 68%, rgba(237,244,245,1) 100%);*/
 }
 
 .brand-name{
@@ -21,8 +25,8 @@ body{
 .jumbo{
 	margin-top: 50px;
 	/*background-image: url(https://i.pinimg.com/564x/2f/c2/5b/2fc25b9b0a0b12a1fe487c90125f5b62.jpg);*/
-  background-image: url(https://cdn1.vectorstock.com/i/1000x1000/97/20/gold-background-with-glitter-vector-20519720.jpg);
-  /*background-image: url(https://static.vecteezy.com/system/resources/previews/000/103/551/non_2x/vector-abstract-bokeh-and-glitter-background-illustration.jpg);*/
+  /*background-image: url(https://cdn1.vectorstock.com/i/1000x1000/97/20/gold-background-with-glitter-vector-20519720.jpg);*/
+  background-image: url(https://static.vecteezy.com/system/resources/previews/000/103/551/non_2x/vector-abstract-bokeh-and-glitter-background-illustration.jpg);
 	background-size: cover;
   background-position: center;
 }
@@ -32,6 +36,12 @@ body{
 
 .nav-item{
   margin-right: 5px;
+}
+
+#srch-term, .input-group-btn{
+  margin: 2px;
+  border: transparent;
+  border-radius: 0.25rem;
 }
 
 .category{
@@ -152,6 +162,6 @@ body{
 }
 #nextbtn:hover{
   background: white;
-  transform: scale(1.1);
+  transform: scale(1.1);border: 4px solid grey;
 }
 
