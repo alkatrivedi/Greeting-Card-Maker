@@ -6,6 +6,7 @@
 
 	<!-- link to style sheets -->
 	<link rel="stylesheet" type="text/css" href="../CSS/MainPage/style.css">
+	
 
 	<!-- Link to Bootstrap-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -20,7 +21,7 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 	  <a class="navbar-brand brand-name" href="#"><img src="https://wallpaperaccess.com/full/1476648.png" width="30" height="30" alt="" loading="lazy">Greetings</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -54,19 +55,60 @@
                 </li>
             </ul>
 	  </div>
-	</nav>
+	</nav> -->
+
+	<!-- *******************************NAVBAR************************** -->
+
+	<nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+		<a class="navbar-brand brand-name" href="#"><img src="https://wallpaperaccess.com/full/1476648.png" width="40" height="40" alt="" loading="lazy">Greetings</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+
+				<li class="nav-item">
+					<a class="nav-link" href="#">Invitations <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Cards</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Calendars</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="NavFiles/ContactUs.html">Contact Us</a>
+				</li>
+				<form class="navbar-form" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+						<div class="input-group-btn">
+							<button class="btn btn-light" type="submit"><i class="fa fa-search"></i></button>
+						</div>
+					</div>
+				</form>
+
+				<li class="nav-item">
+                    <a class="nav-link" href="NavFiles/form.html">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	
+	<!-- *************************************************************************** -->
+
 
 	<div class="jumbotron jumbotron-fluid jumbo">
 		<div class="container">
-			<h1 class="display-4 title"><strong>Glammy Greets :)</strong></h1>
-    		<p class="lead"><strong>A card of your feelings.</strong></p>
+			<h1 class="text-center display-3 title"><strong>Glammy Greets :)</strong></h1>
+    		<p class="text-center lead"><strong>A card of your feelings.</strong></p>
   		</div>
 	</div>
 
 
 	<div class="container">
 
-		<h1 class="category">Events & Occasions<button type="button" class="btn btn-outline-dark" id="nextbtn"><a class="see-more" href="Cards/EventsOccasions.html">View All Cards</a></button></h1>
+		<h2 class="category">Events & Occasions<button type="button" class="btn btn-outline-dark" id="nextbtn"><a class="see-more" href="Cards/EventsOccasions.html">View All Cards</a></button></h2>
 		<div class="box">
 			<div class="card">
 			  <div class="imgBx">
@@ -100,7 +142,7 @@
 
 
 	<div class="container">
-		<h1 class="category">Festival Celebrations<button type="button" class="btn btn-outline-dark" id="nextbtn"><a class="see-more" href="Cards/FestCelebration.html">View All Cards</a></button></h1>
+		<h2 class="category">Festival Celebrations<button type="button" class="btn btn-outline-dark" id="nextbtn"><a class="see-more" href="Cards/FestCelebration.html">View All Cards</a></button></h2>
 		<div class="box">
 			<div class="card">
 			  <div class="imgBx">
@@ -132,10 +174,54 @@
 		</div>
 	</div>
 
+<!-- **************************************middle Jumbotron 1*********************************** -->
+
+	<!-- News jumbotron -->
+<div class="jumbotron bg-transparent text-center hoverable p-4 jumbo1">
+
+	<!-- Grid row -->
+	<div class="row">
+  
+	  <!-- Grid column -->
+	  <div class="col-md-4 offset-md-1 mx-3 my-3">
+  
+		<!-- Featured image -->
+		<div class="view overlay">
+			<!-- https://images.squarespace-cdn.com/content/v1/5967e7e1db29d66c01779462/1599920230862-09AEJ9LV4NTJX2Q4JWJU/ke17ZwdGBToddI8pDm48kPx25wW2-RVvoRgxIT6HShBZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxp8SK2yZDC8sLtVprOyP9xilpMqmr5qElvqElFYURlwnSzTaHLYeySc8Xfr8nFWbQ/cups-and-saucers-eco-greeting-cards-UK.gif" class="img-fluid" alt="Sample image for first version of blog listing -->
+		  <!-- https://media1.giphy.com/media/H6W0UQalNDdfWLParU/source.gif -->
+		  <!-- https://rubycompliance.com/rubycompliance/wp-content/uploads/ruby_contact-1.gif -->
+			<img class="gif" src=" https://images.squarespace-cdn.com/content/v1/5967e7e1db29d66c01779462/1599920230862-09AEJ9LV4NTJX2Q4JWJU/ke17ZwdGBToddI8pDm48kPx25wW2-RVvoRgxIT6HShBZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxp8SK2yZDC8sLtVprOyP9xilpMqmr5qElvqElFYURlwnSzTaHLYeySc8Xfr8nFWbQ/cups-and-saucers-eco-greeting-cards-UK.gif" class="img-fluid" alt="Sample image for first version of blog listing">
+		  <a>
+			<div class="mask rgba-white-slight"></div>
+		  </a>
+		</div>
+  
+	  </div>
+	  <!-- Grid column -->
+  
+	  <!-- Grid column -->
+	  <div class="col-md-7 text-md-left ml-3 mt-3">
+  
+		<h4 class="h4 mb-4">Make your own creative Card!!!</h4>
+  
+		<p class="font-weight-normal">Customize with your words, images, stickers and thoughts. </p>
+  
+		<p><a class="btn btn-success">Get Started</a></p>
+  
+	  </div>
+	  <!-- Grid column -->
+  
+	</div>
+	<!-- Grid row -->
+  
+  </div>
+  <!-- News jumbotron -->
+
+  <!-- **************************************middle Jumbotron 1 ends*********************************** -->
 
 	<div class="container">
 
-		<h1 class="category">Feelings<button type="button" class="btn btn-outline-dark" id="nextbtn"><a class="see-more" href="Cards/Feelings.html">View All Cards</a></button></h1>
+		<h2 class="category">Feelings<button type="button" class="btn btn-outline-dark" id="nextbtn"><a class="see-more" href="Cards/Feelings.html">View All Cards</a></button></h2>
 		<div class="box">
 			<div class="card">
 			  <div class="imgBx">
@@ -170,7 +256,7 @@
 
 	<div class="container">
 
-		<h1 class="category">Relations<button type="button" class="btn btn-outline-dark" id="nextbtn"><a class="see-more" href="Cards/Relations.html">View All Cards</a></button></h1>
+		<h2 class="category">Relations<button type="button" class="btn btn-outline-dark" id="nextbtn"><a class="see-more" href="Cards/Relations.html">View All Cards</a></button></h2>
 		<div class="box">
 			<div class="card">
 			  <div class="imgBx">
@@ -201,6 +287,18 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(document).scroll(function(){
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled",$(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
 
 </body>
 </html>

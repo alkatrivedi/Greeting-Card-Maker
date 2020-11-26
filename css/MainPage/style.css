@@ -1,12 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
 body{
-	font-family: 'Lemonada', cursive;
-  background: #FFAFBD;  /* fallback for old browsers */
-  /*background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);   Chrome 10-25, Safari 5.1-6 */
-  /*background: linear-gradient(to right, #ffc3a0, #FFAFBD);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: rgb(111,113,232);
-  background: linear-gradient(90deg, rgba(111,113,232,1) 0%, rgba(189,84,233,1) 28%, rgba(196,117,218,1) 68%, rgba(237,244,245,1) 100%);
-  /*background: rgb(195,196,230);
-  background: linear-gradient(90deg, rgba(195,196,230,1) 0%, rgba(158,84,233,1) 29%, rgba(198,117,218,1) 68%, rgba(237,244,245,1) 100%);*/
+	font-family: 'Merienda', cursive;
+  /*background: #FFAFBD;  /* fallback for old browsers */
+ /* background: rgb(111,113,232);
+  background: linear-gradient(90deg, rgba(111,113,232,1) 0%, rgba(189,84,233,1) 28%, rgba(196,117,218,1) 68%, rgba(237,244,245,1) 100%);*/
+
+  /*background: #4CA1AF;  /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to right, #86d6e2, #fff);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to right, #86d6e2, #fff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background: #616161;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #b3e2fc, #fff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #b3e2fc, #fff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
 .brand-name{
@@ -19,17 +27,91 @@ body{
 
 .title{
 	font-family: 'Henny Penny', cursive;
-	text-shadow: 2px 2px;;
+  text-shadow: 2px 2px;
+  position: relative; 
+  top: 72px; 
+}
+
+.lead{
+  position: relative; 
+  top: 85px;
+  font-family: 'Merienda','cursive';
 }
 
 .jumbo{
-	margin-top: 50px;
+  height: 400px;
 	/*background-image: url(https://i.pinimg.com/564x/2f/c2/5b/2fc25b9b0a0b12a1fe487c90125f5b62.jpg);*/
   /*background-image: url(https://cdn1.vectorstock.com/i/1000x1000/97/20/gold-background-with-glitter-vector-20519720.jpg);*/
-  background-image: url(https://static.vecteezy.com/system/resources/previews/000/103/551/non_2x/vector-abstract-bokeh-and-glitter-background-illustration.jpg);
+  /*background-image: url(https://static.vecteezy.com/system/resources/previews/000/103/551/non_2x/vector-abstract-bokeh-and-glitter-background-illustration.jpg);*/
+  background-image: url("https://c1.wallpaperflare.com/preview/190/146/542/winter-snow-man-wintry-snow.jpg");
 	background-size: cover;
   background-position: center;
+
+  -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
 }
+
+.jumbo1{
+  font-family: 'Merienda','cursive';
+  font-size: larger;
+ box-shadow:2px 2px 2px 2px #bbc7cf;
+}
+
+.gif{
+  width: 350px;
+  height: 300px;
+}
+
+
+/* **********************NAVBAR**************************** */
+
+#mainNavbar .navbar-brand{
+  color: black;
+  font-size: 25px;
+}
+#mainNavbar{
+  font-size: 18px;
+  font-weight: 500px;
+  height: 70px;
+}
+#mainNavbar .nav-link{
+  color: black;
+  font-family: 'Merienda','cursive';
+}
+#mainNavbar .nav-link:hover{
+  color: #8298a8;
+  text-decoration: underline;
+}
+#headingGrp span{
+  color: black;
+}
+#headingGrp h1{
+  font-weight: 100;
+  font-size: 4rem;
+}
+
+.brand-name{
+  font-size: 30px;
+  font-weight: 100px;
+}
+
+.navbar.scrolled{
+  background-color: white;
+  transition: background 500ms;
+}
+@media (max-width: 1200px){
+  #headingGrp h1{
+      font-weight: 100;
+      font-size: 3rem;
+  }
+}
+
+/* **************************************************************** */
+
+
+
 
 /* *************************************Searchbar Animation***************************** */
 
@@ -48,7 +130,12 @@ body{
 	margin-bottom: 30px;
 	margin-top: 50px;;
 	font-family: 'Lemonada', cursive;
-}
+} 
+
+
+
+
+
 
 /* *************************************Card Animation***************************** */
   
@@ -57,12 +144,12 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 15px;
-    margin: 0 auto;
+    margin: 45px auto;
   }
   .card{
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
     background: #fff;
     margin: 0 auto;
     border-radius: 4px;
@@ -162,6 +249,6 @@ body{
 }
 #nextbtn:hover{
   background: white;
-  transform: scale(1.1);border: 4px solid grey;
+  transform: scale(1.1);border: 2px solid grey;
 }
 
