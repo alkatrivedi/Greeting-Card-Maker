@@ -53,7 +53,7 @@ body{
 /* *************************************Card Animation***************************** */
   
 .box{
-    width: 1200px;
+    width: 98%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 15px;
