@@ -15,6 +15,21 @@ background: -webkit-linear-gradient(to top, #b3e2fc, #fff);  /* Chrome 10-25, Sa
 background: linear-gradient(to top, #b3e2fc, #fff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
+background-image:
+    url("../../Assests/3.png"),
+    url("../../Assests/6.png"),
+    url("../../Assests/12.png"),
+    url("../../Assests/1.png"),
+    url("../../Assests/7.png");
+  background-position:
+  top 400px right -5px,
+   top 800px left -60px, 
+   bottom 1250px left -30px, 
+   bottom 910px right -10px,
+   bottom 270px left -20px;  
+  background-repeat:
+    no-repeat; /* this applies to both images */
+  background-size: 200px 200px, 200px 200px, 220px 220px, 200px 200px, 250px 200px;
 }
 
 .brand-name{
@@ -43,7 +58,8 @@ background: linear-gradient(to top, #b3e2fc, #fff); /* W3C, IE 10+/ Edge, Firefo
 	/*background-image: url(https://i.pinimg.com/564x/2f/c2/5b/2fc25b9b0a0b12a1fe487c90125f5b62.jpg);*/
   /*background-image: url(https://cdn1.vectorstock.com/i/1000x1000/97/20/gold-background-with-glitter-vector-20519720.jpg);*/
   /*background-image: url(https://static.vecteezy.com/system/resources/previews/000/103/551/non_2x/vector-abstract-bokeh-and-glitter-background-illustration.jpg);*/
-  background-image: url("https://c1.wallpaperflare.com/preview/190/146/542/winter-snow-man-wintry-snow.jpg");
+  /* https://us.123rf.com/450wm/maxborovkov/maxborovkov1511/maxborovkov151100368/48771984-christmas-background-with-blue-balls-vector-paper-illustration-.jpg?ver=6 */
+  background-image: url("https://image.freepik.com/free-photo/candy-marshmallow-satin-slippers-girls-pink-background-clock-shape-bicycle_98731-230.jpg");
 	background-size: cover;
   background-position: center;
 
@@ -57,6 +73,7 @@ background: linear-gradient(to top, #b3e2fc, #fff); /* W3C, IE 10+/ Edge, Firefo
   font-family: 'Merienda','cursive';
   font-size: larger;
  box-shadow:2px 2px 2px 2px #bbc7cf;
+ background-color: #e0aff7;
 }
 
 .gif{
@@ -98,7 +115,7 @@ background: linear-gradient(to top, #b3e2fc, #fff); /* W3C, IE 10+/ Edge, Firefo
 }
 
 .navbar.scrolled{
-  background-color: white;
+  background-color: #aacce4;
   transition: background 500ms;
 }
 @media (max-width: 1200px){
