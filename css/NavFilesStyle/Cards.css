@@ -55,10 +55,6 @@ background-image:
 
 .jumbo{
   height: 400px;
-	/*background-image: url(https://i.pinimg.com/564x/2f/c2/5b/2fc25b9b0a0b12a1fe487c90125f5b62.jpg);*/
-  /*background-image: url(https://cdn1.vectorstock.com/i/1000x1000/97/20/gold-background-with-glitter-vector-20519720.jpg);*/
-  /*background-image: url(https://static.vecteezy.com/system/resources/previews/000/103/551/non_2x/vector-abstract-bokeh-and-glitter-background-illustration.jpg);*/
-  /* https://us.123rf.com/450wm/maxborovkov/maxborovkov1511/maxborovkov151100368/48771984-christmas-background-with-blue-balls-vector-paper-illustration-.jpg?ver=6 */
   background-image: url("https://image.freepik.com/free-photo/candy-marshmallow-satin-slippers-girls-pink-background-clock-shape-bicycle_98731-230.jpg");
 	background-size: cover;
   background-position: center;
@@ -68,6 +64,8 @@ background-image:
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
 }
+
+
 
 .jumbo1{
   font-family: 'Merienda','cursive';
