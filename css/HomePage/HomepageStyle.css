@@ -1,7 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Open+Sans:400italic,300italic);
-body {
-  background-color: rgb(15, 15, 15);
-}
 
 .home {
   width: 100%;
@@ -375,3 +372,73 @@ Animation keyframes
 
 
 
+body {
+  background-color: #000;
+}
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url(https://cf.ltkcdn.net/crafts/images/orig/258673-1801x1245-Printed_greeting_cards.jpg) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(https://i.ytimg.com/vi/59Ik-EZUvCc/maxresdefault.jpg);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(https://ae01.alicdn.com/kf/HTB1r_2VaeL2gK0jSZFmq6A7iXXaN/cute-mini-greeting-cards-square-handmade-birthday-cards-for-kids-friend-father-mother.jpg_960x960.jpg);
+  animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(https://cdn.shopify.com/s/files/1/0194/2855/products/Blooms-3_2000x.jpg?v=1603478985);
+  animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(https://printify.com/wp-content/uploads/2020/04/custom-greeting-cards.jpg);
+  animation-delay: 40s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+  opacity: 1;
+}
