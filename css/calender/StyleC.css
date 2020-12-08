@@ -1,0 +1,115 @@
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+    font-family: 'Texturina', serif;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:1.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position: absolute;
+    text-align:center;
+    top:50%;
+    display: flex;
+    transform:translate(-50%, -50%);
+  }
+  
+  h1 {
+    font-family:monospace;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+  .side1{
+      margin: 10px;
+      padding: 20px;
+      border-radius: 1.5rem;
+  }
+  .side2{
+      margin: 10px;
+      padding: 20px;
+      border-radius: 1.5rem;
+  }
+  input{
+      width: auto;
+      margin: 3px;
+      height: 34px;
+      text-align: center;
+      padding: 4px;
+      background-color: honeydew;
+      border: 2px solid rgb(199, 194, 194);
+      border-radius: .25rem;
+  }
+  .image{
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+  }
+  .image2{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 65px;
+    bottom: 50px;
+    animation: rotation 2s infinite linear;
+}
+.image3{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    right: 115px;
+    bottom: 110px;
+    animation: rotate 2.5s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  @keyframes rotate {
+    from {
+        transform: rotate(359deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
