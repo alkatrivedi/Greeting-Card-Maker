@@ -18,6 +18,9 @@
 	<!-- Link to font awesome-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+	<!-- link to jquery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -95,10 +98,13 @@
 
 
 	
-	<div class="jumbotron jumbotron-fluid jumbo">
+	<div class="jumbotron jumbotron-fluid jumbo" >
 		<div class="container">
 			<h1 class="text-center display-3 title"><strong>Glammy Greets :)</strong></h1>
-    		<p class="text-center lead"><strong>A card of your feelings.</strong></p>
+			<p class="text-center lead"><strong>A card of your feelings.</strong></p>
+			<div id="starshine">
+				<div class="template shine"></div>
+			</div>
   		</div>
 	</div>
 
@@ -353,7 +359,37 @@
 	</div>
 	<button id="scrollTopBtn" title="Scroll to Top" type="button" class="btn btn-success" style=" opacity: 1;" onclick="scrollToTop()">▲</button> 
   </footer>
-
+<script>
+	$(function() {
+  var body = $('#starshine'),
+      template = $('.template.shine'),
+      stars =  500,
+      sparkle = 20;
+  
+    
+  var size = 'small';
+  var createStar = function() {
+    template.clone().removeAttr('id').css({
+      top: (Math.random() * 100) + '%',
+      left: (Math.random() * 100) + '%',
+      webkitAnimationDelay: (Math.random() * sparkle) + 's',
+      mozAnimationDelay: (Math.random() * sparkle) + 's'
+    }).addClass(size).appendTo(body);
+  };
+ 
+  for(var i = 0; i < stars; i++) {
+    if(i % 2 === 0) {
+      size = 'small';
+    } else if(i % 3 === 0) {
+      size = 'medium';
+    } else {
+      size = 'large';
+    }
+    
+    createStar();
+  }
+});
+</script>
 
 <!-- <script type="text/javascript" src="../JS/FormScript/IndexScript.js"></script>
 
