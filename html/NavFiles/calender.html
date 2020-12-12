@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calender</title>
 
     <link rel="stylesheet" href="../../css/calender/StyleC.css">
 
@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
 
+ <!-- link to jquery -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div class="bg"></div>
@@ -18,23 +21,29 @@
     <div class="bg bg3"></div>
     <div class="content" id="content1">
         <div class="side1">
-            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/january-2020-calendar-design-template-b818efb18df63eded5b490088d8177ee.jpg?ts=1578739994" alt="image" title="image">
-            <br></br><label>Select file to upload:</label>  
-            <input type="file" name="newfile">  
-            <input type="submit" value="submit">  
+            <div id="imge">
+                <p id="month">month <p id="day">monday</p></p>
+                <div id="inn">1</div>
+                <p id="year">year</p>
+            </div>
+            <br></br><label>Select file to upload:</label> 
+            <input type="file" name="newfile" id="inputFile" onchange="readURL(event)">  
+            <input type="submit" value="Reset" id="submit">  
 
         </div>
         <div class="side2">
             <h1>calender</h1>
             Start date:
-            <input type="date" name="Startdate"> <br><br> 
+            <input type="date" name="Startdate" id="date-input1"> <br><br> 
             End date: 
-            <input type="date" name="Enddate"> <br><br>  
-            <input type="submit">
+            <input type="date" name="Enddate" id="date-input2"> <br><br>  
+            <input type="submit" id="submit2">
            <div class="image"> <img src="../../Assests/3.png" alt="img" title="hearts"></div>
            <img src="../../Assests/13.png" alt="img" title="hearts" class="image2" >
            <div class="image3"><img src="../../Assests/13.png" alt="img" title="hearts" width="80px"></div>
         </div>
     </div>
+
+    <script type="text/javascript" src="../../JS/calender/jscript.js"></script>
 </body>
 </html>

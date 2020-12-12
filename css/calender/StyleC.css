@@ -113,3 +113,30 @@ html {
       transform: rotate(0deg);
     }
   }
+
+  
+#imge{
+  width: 300px;
+  height: 300px;
+  background-image: url(https://www.ppt-backgrounds.net/thumbs/autumn-picture-downloads.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#inn{
+  margin-left: 53px ;
+  margin-right: 53px;
+  padding-bottom: 50px;
+  width: 180px;
+  height: 140px;
+  text-align: center;
+  font-size: 130px;
+  font-weight: bolder;
+  background-color:rgba(255,255,255,.6);
+}
+
+p{
+  margin: 2px;
+  font-size: 20px;
+  font-weight: bold;
+}
