@@ -1,0 +1,25 @@
+{
+  "name": "Greeting-Card-Maker",
+  "version": "1.0.0",
+  "description": "<!-- <h1> Greeting Card Web App</h1> -->\r # Greeting Card Web App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snehal2841/Greeting-Card-Maker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snehal2841/Greeting-Card-Maker/issues"
+  },
+  "homepage": "https://github.com/snehal2841/Greeting-Card-Maker#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8"
+  }
+}
